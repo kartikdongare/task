@@ -3,6 +3,8 @@ import { data as followData } from "../../data";
 import { useNavigate } from "react-router-dom";
 
 const Follow = ({ value }: any) => {
+  const navTo = useNavigate();
+
   const friend = followData.filter(
     (curEle: any) => curEle.id === parseInt(value)
   );
@@ -11,7 +13,6 @@ const Follow = ({ value }: any) => {
     setfriendList(friend.map((curEle: any) => curEle.friends));
   }, [value]);
 
-  const navTo = useNavigate();
   const handleClick = (id: number) => {
     navTo(`/${id}`);
   };
