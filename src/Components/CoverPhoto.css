@@ -1,0 +1,88 @@
+.main-cover{
+    /* border: 1px solid black; */
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+}
+.main-cover .sub-cover{
+    position: relative;
+    background-color: rgb(12, 1, 1);
+    opacity: 0.6;
+    height: 8vh;
+   top: 75%;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 22px;
+   font-weight: bold;
+}
+.pic1{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    opacity: color 1;
+}
+.pic2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    opacity: 1;
+}
+.pic3{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    opacity: 1;
+}
+.pic3 .btn{
+    background-color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+}
+.img1{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid white;
+   
+}
+.pic2 p:hover{
+    color: blue;
+    transition: all .3s linear;
+}
+.pic3 p:hover{
+    color: blue;
+    transition: all .3s linear;
+}
+
+@media screen and (min-width:320px) and (max-width:600px){
+    .main-cover{
+        width: 100vw;
+    }
+    .pic1 ,.pic2,.pic3{
+        gap: 10px;
+    }
+    .img1{
+        width: 80px;
+        height: 80px;
+    }
+    .pic3 {
+        display: none;
+    }
+    .pic3 .btn{
+        padding: 5px 10px;
+    }
+    .main-cover .sub-cover{
+        padding: 0 65px 0 10px;
+    }
+}
